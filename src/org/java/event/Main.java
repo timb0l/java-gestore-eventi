@@ -2,7 +2,6 @@ package org.java.event;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
@@ -20,7 +19,7 @@ public class Main {
 
         try {
             Event event = new Event(title, date, totalSeat);
-            System.out.print("Event created: "); + event.toString();
+            System.out.print("Event created: " + event.toString());
 
             System.out.print("Make a reservation? y/n");
             String answer = sc.next();
